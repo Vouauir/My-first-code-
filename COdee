@@ -1,0 +1,64 @@
+while True:
+  pontos = 0
+  vidas = 2
+  resposta = input("Quanto é 2+2?")
+
+  if resposta == "4":
+      pontos+=1
+      print (" Correto! voce tem", pontos,"pontos")
+  else:
+      vidas-=1
+      print ("Errado voce tem", vidas, "vidas")
+       
+  resposta2 = input("Quanto é 5x5 ")
+  if resposta2 == "25":
+      pontos+=1 
+      print ("Correto! voce tem", pontos,"pontos")
+  else:
+      vidas-=1
+      print ("Errado, voce tem", vidas, "vidas ")
+      if vidas == 0:
+        print ("FIM DE JOGO. VOCE MORREU. voce obteve", pontos,"pontos")
+        break
+      
+  resposta3 = input("Qual a primeira letra do alfabeto? ") .lower()
+  if resposta3 == "a":
+      pontos+=1
+      print ("Correto! Voce tem", pontos,"pontos")
+  else:
+      vidas-=1
+      print ("Errado, Voce   tem", vidas, "vidas")
+      if vidas == 0:
+          print ("FIM DE JOGO. VOCE MORREU. voce obteve", pontos,"pontos")
+          break
+        
+
+  resposta4 = input("Qual a cor do céu? ") .lower()
+  if resposta4 == "azul":
+      pontos+=1
+      print ("Correto! FIM DE JOGO! Voce obteve", pontos, "pontos ")
+      if pontos == 1:
+          print ("Dá pra melhorar!")
+          break
+          
+      elif pontos == 2:
+          print ("Bom, mas não tanto")
+          break
+    
+      elif pontos == 3 or pontos == 4:
+          print ("Ótimo, fácil né?")
+          break
+          
+  else:
+    
+      print ("Errado! FIM DE JOGO! Voce obteve", pontos, "pontos ")
+      if pontos == 0 or pontos == 1:
+          print ("Péssimo.")
+          break
+      elif pontos == 2:
+          print ("Bom, mas não tanto")
+          break
+      elif pontos == 3 or pontos == 4:
+          print ("Ótimo, fácil né?")
+          break
+       
